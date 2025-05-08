@@ -1,24 +1,15 @@
-# 12-3-Getting-Info-on-Elements-with-jQuery
+# 13-3-Animating-Visibility-with-jQuery
 
 ## Video
 
-[Video](https://youtu.be/nf5lCuLCpwQ) <-- Make sure to watch this video first<br>
+[Video](https://youtu.be/2aC_lmwD6vA) <-- Make sure to watch this video first<br>
 
 ## Directions
 
-### Step #1 - Find the math heading <br>
+### Step #1 - Slide the snake <br>
 
-This webpage displays famous discoveries using HTML headings and lists. In this first step, use jQuery to find the math heading (with id='math-heading') and store it in a variable named math.  If you'd like, you can use console.log() to see what's stored in the variable.
+This webpage includes an image of a rather scary snake, but it's hidden right now. In this step, use jQuery's `slideDown()` function to animate the snake coming down from the top of the page. Creepy!
 <br><br>
-_Hint:_<br>`var math = $(_);`
-<br><br>
-### Step #2 - Change the math heading <br>
-Now use jQuery to change the math heading to be the previous text plus an exclamation like ' ...wow!' or '...amazing!'.
-<br><br>
-_Hint:_<br>`$(_).text(math + "...")`
+### Step #2 - Announce the snake <br>
 
-### Step #3 - Change the science heading <br>
-Now follow the same steps for the science heading: use jQuery to find the element with id='science-heading', store it in a variable named science, and change its text to be the previous text plus some new exciting text. 
-<br><br>
-_Hint:_<br>`var sci = $(_);`<br>`$(_).text(math + "...")`
-
+In this step, you'll announce the snake once he's slid down from the top. You can do that by adding two parameters to slideDown, an amount to delay and a post-animation callback function. In that callback function, use jQuery to get the <h1> to appear.
